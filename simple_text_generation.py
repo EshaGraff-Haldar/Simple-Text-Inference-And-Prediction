@@ -1,7 +1,9 @@
 import random
 import json
+import os
 
-with open("dictionary.txt", "r") as fp:
+cwd = os.getcwd()
+with open(cwd+ "/dictionary.txt", "r") as fp:
     data = json.load(fp)
 
 mono_dict = data["mono"]
